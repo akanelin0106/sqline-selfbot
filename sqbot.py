@@ -1,7 +1,7 @@
 from CHRLINE import *
 import time,json,codecs
 # default device CHROMEOS not support OpenChat.
-user = json.load(codecs.open("json/user.json","r","utf-8"))
+user = json.load(codecs.open("user.json","r","utf-8"))
 cl = CHRLINE("",device="IOSIPAD",useThrift = True)
 events = cl.fetchMyEvents()
 while True:
